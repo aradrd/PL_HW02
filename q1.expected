@@ -1,0 +1,11 @@
+Standard ML of New Jersey (64-bit) v110.99.2 [built: Sun Mar 20 20:10:23 2022]
+[opening hw2_q1.sml]
+val sig1 = fn : 'a -> 'b -> ('a * 'b -> 'b) -> 'b
+val sig2 = fn : int * real -> (real -> string) -> bool
+val sig3 = fn : ('a -> 'b -> 'c) -> 'a -> 'b -> 'd -> 'c
+val sig4 = fn : 'a -> 'b -> int -> int -> int
+val sig5 = fn : ('a -> 'b) -> 'a -> ('b * 'b -> 'c) -> 'c
+val sig6 = fn : unit -> unit -> int
+val sig7 = fn : 'a -> 'a * 'a -> 'a
+val sig8 = fn : int * string * string -> int * string * string
+- 

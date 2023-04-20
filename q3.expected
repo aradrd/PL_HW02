@@ -1,0 +1,8 @@
+Standard ML of New Jersey (64-bit) v110.99.2 [built: Sun Mar 20 20:10:23 2022]
+[opening hw2_q3.sml]
+datatype cell = alive | empty
+val is_alive = fn :
+  cell * cell * cell -> cell * cell * cell -> cell * cell * cell -> cell
+- val test_1 = "Passed" : string
+val test_2 = "Passed" : string
+- 

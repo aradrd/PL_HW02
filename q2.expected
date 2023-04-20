@@ -1,0 +1,9 @@
+Standard ML of New Jersey (64-bit) v110.99.2 [built: Sun Mar 20 20:10:23 2022]
+[opening hw2_q2.sml]
+val curry = fn : ('a * 'b -> 'c) -> 'a -> 'b -> 'c
+val uncurry = fn : ('a -> 'b -> 'c) -> 'a * 'b -> 'c
+- val it = fn : int -> int -> int
+val test_1 = "Passed" : string
+val it = fn : int * int -> int
+val test_2 = "Passed" : string
+- 
