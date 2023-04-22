@@ -18,7 +18,7 @@ Non-Terminals: `<statements>`, `<statement>`, `<expression>`, `<variable>`, `<te
 Every `<statements>` starts with a `<statement>`, which, in turn, starts with either a ✍️ or 📖. This series of terminals doesn't begin with either, so it doesn't belong in this grammar.
 #### b. No
 
-Every notebook emoji comes from a variable, and every variable needs either a ↪️ or a ✍️ before it asccording to the grammer. On line 3 there's a notebook with a ⬅️ before it, which can't be in this grammer.
+Every notebook emoji comes from a variable, and every variable needs either a ↪️ or a ✍️ before it according to the grammer. On line 3 there's a notebook with a ⬅️ before it, which can't be in this grammer.
 
 #### c. Yes
 
