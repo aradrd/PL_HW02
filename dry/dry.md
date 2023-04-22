@@ -3,7 +3,7 @@
 Submitted by Itay Segev and Arad Reder
 
 <p align="center">
-<img src="defeat.jpg" alt="defeat_meme" width="50%">
+<img src="defeat.jpg" alt="defeat_meme" width="100%">
 </p>
 
 ## Question 1
@@ -139,5 +139,7 @@ From here we can break either the left or right `<expression>` to "`<expression>
 10. The `Math.sqrt` function's return type is `real`, although the function `sqrt_of_int` is set to return an `int`.
 
 ## Rejected Memes
-![normalMeme](normal.jpg)
-![laughingMeme](laughing.jpg)
+<p align="center">
+<img src="normal.jpg" alt="normal_meme" width="50%">
+<img src="laughing.jpg" alt="laughing_meme" width="50%">
+</p>
