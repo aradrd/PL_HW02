@@ -9,7 +9,7 @@ in
       val living_neighbors = count_alive [a1, a2, a3, b1, b3, c1, c2, c3]
     in
       if b2 = alive then
-        if living_neighbors >= 1 andalso living_neighbors <= 3 then
+        if living_neighbors >= 2 andalso living_neighbors <= 3 then
           alive
         else
           empty
