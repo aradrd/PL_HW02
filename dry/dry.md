@@ -7,6 +7,19 @@ Submitted by Itay Segev and Arad Reder
 </p>
 
 ## Question 1
+For convenience, I'll mark the rules as follows:
+1. `<statements>` = `<statement>` `<statements>` | `<statement>`
+2. `<statement>` = ✍️`<variable>`⬅️`<expression>`
+3. `<statement>` = 📖`<expression>`
+4. `<expression>` = ↪️`<variable>`
+5. `<expression>` = `<term>`
+6. `<expression>` = `<expression>` `<operation>` `<expression>`
+7. `<variable>` = 📗|📘|📙|📕|📔
+8. `<term>` = 😇|🙂|😐|😕|🙁|☹️|😣
+9. `<operation>` = ➕|➖|✖️|➗
+
+Where "1.1" refers to the first derivation of rule no. 1.
+
 ### 1.
 Start Symbol: `<statements>`. <br>
 Terminals: ✍️, ⬅️, 📖, ↪️, 📗, 📘, 📙, 📕, 📔, 😇, 🙂, 😐, 😕, 🙁, ☹️, 😣, ➕, ➖, ✖️, ➗. <br>
@@ -24,25 +37,29 @@ Every notebook emoji comes from a variable, and every variable needs either a �
 
 `<statements>`
 
-&darr;
+&darr; 1.1
 
 `<statement>` <br> `<statements>`
 
-&darr;
+&darr; 1.1
 
 `<statement>` <br> `<statement>` <br> `<statements>`
 
-&darr;
+&darr; 1.2
 
 `<statement>` <br> `<statement>` <br> `<statement>`
 
-&darr;
+&darr; 2.1 <br>
+&darr; 3.1 <br>
+&darr; 2.1
 
 ✍️ `<variable>` ⬅️ `<expression>` <br>
 📖 `<expression>` <br>
 ✍️ `<variable>` ⬅️ `<expression>` <br>
 
-&darr;
+&darr; 7.4 5.1 <br>
+&darr; 6.1 <br>
+&darr; 7.1 5.1 9.2 5.1
 
 ✍️ 📕 ⬅️ `<term>` <br>
 📖 `<expression>` `<operation>` `<expression>` <br>
