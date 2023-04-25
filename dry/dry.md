@@ -7,7 +7,7 @@ Submitted by Itay Segev and Arad Reder
 </p>
 
 ## Question 1
-For convenience, I'll mark the rules as follows:
+For convenience, we'll mark the rules as follows:
 1. `<statements>` = `<statement>` `<statements>` | `<statement>`
 2. `<statement>` = ✍️`<variable>`⬅️`<expression>`
 3. `<statement>` = 📖`<expression>`
@@ -41,10 +41,13 @@ Every notebook emoji comes from a variable, and every variable needs either a �
 
 `<statement>` <br> `<statements>`
 
+&darr; <br>
 &darr; 1.1
 
 `<statement>` <br> `<statement>` <br> `<statements>`
 
+&darr; <br>
+&darr; <br>
 &darr; 1.2
 
 `<statement>` <br> `<statement>` <br> `<statement>`
@@ -59,88 +62,57 @@ Every notebook emoji comes from a variable, and every variable needs either a �
 
 &darr; 7.4 5.1 <br>
 &darr; 6.1 <br>
-&darr; 7.1 5.1 9.2 5.1
+&darr; 7.1 6.1
 
 ✍️ 📕 ⬅️ `<term>` <br>
 📖 `<expression>` `<operation>` `<expression>` <br>
-✍️ 📗 ⬅️ `<term>` ➖ `<term>` <br>
+✍️ 📗 ⬅️ `<expression>` `<operation>` `<expression>` <br>
 
-&darr;
+&darr; 8.4 <br>
+&darr; 5.1 9.3 6.1 <br>
+&darr; 5.1 9.2 5.1
 
-✍️ 📕 ⬅️ `<term>` <br>
+✍️ 📕 ⬅️ 😕 <br>
 📖 `<term>` ✖️ `<expression>` `<operation>` `<expression>` <br>
 ✍️ 📗 ⬅️ `<term>` ➖ `<term>` <br>
 
-&darr;
+&darr; <br>
+&darr; 8.7 4.1 9.2 5.1 <br>
+&darr; 8.2 8.2
 
 ✍️ 📕 ⬅️ 😕 <br>
 📖 😣 ✖️ ↪️ `<variable>` ➖ `<term>` <br>
 ✍️ 📗 ⬅️ 🙂 ➖ 🙂 <br>
 
+&darr; <br>
+&darr; 7.4 8.1 <br>
 &darr;
 
 ✍️ 📕 ⬅️ 😕 <br>
 📖 😣 ✖️ ↪️ 📕 ➖ 😇 <br>
 ✍️ 📗 ⬅️ 🙂 ➖ 🙂 <br>
 
-#### d. Yes
-
-`<statements>`
-
-&darr;
-
-`<statement>` <br> `<statements>`
-
-&darr;
-
-`<statement>` <br> `<statement>` <br> `<statements>`
-
-&darr;
-
-`<statement>` <br> `<statement>` <br> `<statement>`
-
-&darr;
-
-✍️ `<variable>` ⬅️ `<expression>` <br>
-📖 `<expression>` <br>
-📖 `<expression>` <br>
-
-&darr;
-
-✍️ 📔 ⬅️ `<term>` <br>
-📖 `<expression>` `<operation>` `<expression>` <br>
-📖 `<expression>` `<operation>` `<expression>` <br>
-
-&darr;
-
-✍️ 📔 ⬅️ 😡 <br>
-📖 ↪️ `<variable>` ➗ ↪️ `<variable>` <br>
-📖 ↪️ `<variable>` ➗ ↪️ `<variable>` <br>
-
-&darr;
-
-✍️ 📔 ⬅️ 😡 <br>
-📖 ↪️ 📔 ➗ ↪️ 📔 <br>
-📖 ↪️ 📔 ➗ ↪️ 📔 <br>
+#### d. No
+"😡" is not a terminal, and so any string that contains it does not belong in EmojiLang.
 
 ### 3. Yes
 For example: "📖 🙂 ➕ 🙂 ➕ 🙂" is ambiguous. Because this can come to be in 2 different ways:
 
 `<statements>`
 
-&darr;
+&darr; 1.2
 
 `<statement>` 
 
-&darr;
+&darr; 3.1
 
 📖 `<expression>`
 
-&darr;
+&darr; 6.1
 
 📖 `<expression>` `<operation>` `<expression>`
 
-From here we can break either the left or right `<expression>` to "`<expression>` `<operation>` `<expression>`", which will create 2 different trees (with possibly 2 different meanings).
+From here we can break either the left or right `<expression>` to "`<expression>` `<operation>` `<expression>`" (using 6.1), which will create 2 different trees (with possibly 2 different meanings).
 
 ## Question 2
 
